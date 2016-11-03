@@ -70,7 +70,7 @@ module CollectdCookbook
 
       # @return [String]
       def default_command
-        "/usr/sbin/collectd -C #{config_filename}"
+        "/usr/sbin/collectd -f -C #{config_filename}"
       end
 
       def default_configuration
